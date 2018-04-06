@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;text-decoration: none;}
+#banner{position: relative;
+	width: 640px;
+	height: 640px;
+	overflow: hidden;
+	}
+#list{position: absolute;
+	z-index: 1;
+	width: 1920px;
+	height: 640px;}
+#list img{float: left;
+	width: 640px;
+	height: 640px;}	
+.arrow{position: absolute;
+		top: 180px;
+		z-index: 2;
+		display: none;
+		width: 40px;
+		height: 40px;
+		font-size: 36px;
+		font-weight: bold;
+		line-height: 39px;
+		text-align: center;
+		color: #fff;
+	 background-color: RGBA(0, 0, 0, .3);
+            cursor: pointer;}
+ .arrow:hover{background-color: RGBA(0, 0, 0, .7);}           		
+ #banner:hover .arrow{display: block;}
+ #prev{left: 20px;}
+ #next{right: 20px;}

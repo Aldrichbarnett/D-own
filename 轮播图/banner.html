@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>0.0.0</title>
+	<link rel="stylesheet" type="text/css" href="banner.css">
+	<script type="text/javascript">
+window.onload = function(){
+	var list = document.getElementById('list');
+	var prev = document.getElementById('prev');
+	var next = document.getElementById('next');
+	function animate(offset){
+		var newleft = parseInt(list.style.left) + offset;
+	list.style.left = newleft + 'px';
+	if(newleft<-1280){
+      list.style.left = 0 + 'px';
+ }
+ if(newleft>0){
+      list.style.left = -1280 + 'px';
+ }		
+
+	}
+	prev.onclick = function(){
+		animate(+640);
+	}
+	next.onclick = function(){
+		animate(-640)
+	}
+	var timer;
+	function play() {
+    timer = setInterval(function () {
+        prev.onclick()
+    }, 1500) 
+	
+}
+
+
+
+            function stop() {
+                clearInterval(timer);
+            }
+            banner.onmouseover = stop;
+            banner.onmouseout = play;
+	
+}
+
+
+
+	</script>
+	</head>
+	<body>
+<div id="banner">
+	<div id="list" style="left:-640px;">
+	
+		<img src="9.jpg" alt="1">
+		<img src="10.jpg" alt="2">
+		<img src="7.jpg"
+		alt="3">
+		
+
+	</div>
+	<a  id="prev" class="arrow">&lt;</a>
+         <a  id="next" class="arrow">&gt;</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+	</html>
