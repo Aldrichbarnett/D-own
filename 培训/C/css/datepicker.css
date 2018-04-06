@@ -1,0 +1,54 @@
+*{margin: 0;
+	padding: 0;}
+body{background: url(../image/web_re.png) no-repeat center center;
+	background-size: cover;}	
+
+
+.datepicker-wrapper{width: 400px;
+				font-size: 20px;
+				color: #2DCB70;
+				box-shadow: 4px 5px 8px 4px #000;
+				display: none;
+				background: #fff;
+				position: absolute;}
+.dobi{display: block;}				
+
+.datepicker-wrapper .datepicker-header{height: 50px;
+										line-height: 50px;
+										text-align: center;
+										background: #000;
+										border-bottom: 2px solid #ccc;
+										font-weight: bold;}
+.datepicker-wrapper .datepicker-btn{font-family: serif;
+									font-size: 20px;
+									color: #00BFFF;
+									width: 30px;
+									height: 50px;
+									line-height: 50px;
+									text-decoration: none;}	
+.datepicker-wrapper .datepicker-prev{float: left;}
+.datepicker-wrapper .datepicker-next{float: right;}
+.datepicker-wrapper .datepicker-body table{width: 100%;
+											border-collapse:collapse;}
+.datepicker-wrapper .datepicker-body th,.datepicker-wrapper .datepicker-body td{
+					height: 30px;
+					text-align: center;
+}											
+.datepicker-wrapper .datepicker-body th{font-size: 15px;
+										height: 40px;
+										line-height: 40px;}
+.datepicker-wrapper .datepicker-body td{border: 2px solid #EE82EE;
+										
+										cursor: pointer;
+										border-radius: 100%;}
+.datepicker{
+	border: 2px solid #fff;
+	width: 400px;
+	border-radius: 4px;
+	height: 45px;
+	line-height: 24px;
+	
+
+}
+.datepicker:focus{outline: 0 none;
+border: 3px solid #1abc9c;}																				
